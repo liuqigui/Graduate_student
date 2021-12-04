@@ -86,6 +86,7 @@ class Resnet(nn.Module):
                  block,
                  blocks_num,
                  num_classes=1000,
+                 include_top=True,
                  groups=1,
                  width_per_group=64):
         super(Resnet, self).__init__()
