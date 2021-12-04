@@ -124,7 +124,7 @@ class Resnet(nn.Module):
                             channel,
                             downsample=downsample,
                             stride=stride,
-                            groups+self.groups,
+                            groups=self.groups,
                             width_per_group=self.width_per_group))
         self.in_channel = channel * block.expansion
 
